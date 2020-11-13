@@ -1,0 +1,25 @@
+.services {
+  background-color: $grey-background;
+  padding-top: 64px;
+  padding-bottom: 99px;
+}
+
+.services__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.services__title-text {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  width: 394px;
+}
+
+.sevices__wrapper-menu {
+  display: flex;
+}
