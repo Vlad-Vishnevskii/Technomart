@@ -1,0 +1,91 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+
+.description__left {
+  width: 460px;
+}
+
+.description__title {
+  text-transform: uppercase;
+  font-family: $base-font;
+  font-size: 30px;
+  line-height: 30px;
+  color: $black;
+}
+
+.description__company,
+.description__delivery {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.description__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__delivery-company {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description__delivery-company-item {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.description__delivery-company-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: $basic-red;
+  top: 10px;
+  left: 0;
+}
+
+.description__more-button {
+  margin-top: 30px;
+  display: block;
+  width: 220px;
+  padding: 11px 0;
+  background-color: $basic-red;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.description__right-info {
+  font-family: $alternative-font;
+  font-size: 13px;
+  line-height: 24px;
+  width: 181px;
+}
+
+.description__right-button {
+  display: block;
+  margin-top: 30px;
+  width: 300px;
+  padding: 11px 0;
+  background-color: $basic-red;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}

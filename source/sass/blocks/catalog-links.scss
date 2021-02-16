@@ -1,0 +1,30 @@
+.catalog-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.catalog-links__item {
+  margin-right: 58px;
+}
+
+.catalog-links__item:last-of-type {
+  margin-right: 0;
+}
+
+.catalog-links__link {
+  font-size: 18px;
+  line-height: 24px;
+  color: $yellow-footer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+}

@@ -1,11 +1,107 @@
 .page-header {
   background: url("../img/top-background.png");
-  padding-bottom: 45px;
+  padding-bottom: 61px;
 }
 
 .page-header__link {
   color: inherit;
   text-decoration: none;
+
+  &:hover .page-header__icon {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.page-header__input-search {
+  border: none;
+  padding-left: 43px;
+  background-image: url("/img/icon-search-opacity.png");
+  background-color: $black-menu;
+  background-repeat: no-repeat;
+  background-position-x: 16px;
+  background-position-y: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+
+  &:hover {
+    background-image: url("/img/icon-search.png");
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $white;
+    background-image: url("/img/icon-search-red.png");
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+
+  &:focus:-moz-placeholder {
+    color: transparent;
+  }
+
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+}
+
+.page-header__input-search::-webkit-input-placeholder {
+  font-family: $base-font;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+}
+
+.page-header__input-search:-moz-placeholder {
+  font-family: $base-font;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+}
+
+.page-header__link_bookmarks {
+  align-self: stretch;
+  padding-top: 10px;
+  display: flex;
+  align-items: baseline;
+
+  &:focus {
+    background: $focus-black;
+    outline: none;
+  }
+}
+
+.page-header__bookmarks-counter {
+  margin-left: 5px;
+}
+
+.page-header__icon {
+  opacity: 0.3;
+}
+
+.page-header__logo {
+  display: flex;
+  background-image: url("/img/header-logo.svg");
+  width: 220px;
+  height: 47px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -2px;
+
+  &:focus {
+    background-image: url("/img/header-logo-click.png");
+    outline: none;
+  }
 }
 
 .page-header__top-menu {
@@ -18,8 +114,8 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
-  align-items: baseline;
   font-size: 18px;
   line-height: 24px;
 }
@@ -29,33 +125,43 @@
   align-items: center;
 }
 
-.page-header__top-menu-item_logo {
-  position: absolute;
+.page-header__search-from {
+  align-self: stretch;
+  display: flex;
 }
 
 .page-header__top-menu-item_search {
-  margin-left: 270px;
+  margin-left: 218px;
+  align-self: stretch;
+  display: flex;
+  width: 265px;
 }
 
 .page-header__top-menu-item_bookmarks {
-  margin-left: 193px;
+  width: 159px;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
 }
 
 .page-header__top-menu-item_basket {
-  margin-left: 50px;
+  margin-left: 22px;
 }
 
 .page-header__top-menu-item_place-order-button {
-  margin-left: 50px;
+  margin-left: 26px;
   background-color: $order-green;
   padding: 9px 19px;
+
+  &:hover {
+    background-color: $success;
+  }
 }
 
 .page-header__middle {
   display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  align-items: baseline;
+  padding-top: 45px;
+  align-items: flex-start;
 }
 
 .page-header__title {
@@ -65,11 +171,14 @@
   color: $basic-red;
   width: 211px;
   margin: 0;
+  margin-left: 29px;
+  margin-right: 80px;
 }
 
 .page-header__contacts {
   width: 270px;
   flex-wrap: wrap;
+  margin-right: 70px;
 }
 
 .page-header__tel {
@@ -79,20 +188,19 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  padding: 7px 59px;
+  padding: 5px 34px;
   border: 3px solid $white;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
-.page-header__adress {
+.page-header__address {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 24px;
   text-decoration: none;
   color: $blue-basic;
-  margin: 0 auto;
-  width: 250px;
+  width: 269px;
   text-align: center;
 }
 
@@ -104,25 +212,55 @@
   line-height: 21px;
   background-color: $white;
   box-sizing: border-box;
+
+  &:hover {
+    color: $basic-red;
+  }
+
+  &:hover .page-header__icon-login {
+    fill: $blue-hover-login;
+  }
+
+  &:focus {
+    color: $grey;
+  }
+
+  &:focus .page-header__icon-login {
+    fill: $grey;
+  }
+}
+
+.page-header__middle-button_login {
+  padding: 12px 0;
+  padding-left: 19px;
+  padding-right: 10px;
+  width: 121px;
+}
+
+.page-header__middle-button_reg {
   padding: 12px 24px;
 }
 
-.main-nav {
-  background-color: $blue-basic;
-  margin-top: 39px;
+.page-header__icon-login {
+  fill: $grey;
+  margin-right: 7px;
 }
 
-.main-nav__list {
-  list-style: none;
-  color: $white;
-  font-size: 18px;
-  line-height: 24px;
+.page-header__icon_bookmarks {
+  display: block;
+  margin-right: 8px;
+}
+
+.page-header__icon_basket {
+  margin-right: 4px;
+}
+
+.page-header__icon-tel {
+  margin-right: 11px;
+}
+
+.page-header__login-buttons {
   display: flex;
-  justify-content: space-around;
-  padding: 18px 0;
-}
-
-.main-nav__link {
-  color: $white;
-  text-decoration: none;
+  justify-content: space-between;
+  width: 284px;
 }

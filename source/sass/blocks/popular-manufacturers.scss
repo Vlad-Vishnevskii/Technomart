@@ -6,17 +6,31 @@
 .popular-manufacturers__top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   padding-left: 28px;
   padding-right: 19px;
   background-color: $beige;
+  padding-bottom: 26px;
 }
 
 .popular-manufacturers__title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   color: $blue-basic;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.popular-manufacturers__show-all-button {
+  padding: 5px 0;
+  width: 192px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 26px;
 }
 
 .popular-manufacturers__list {
@@ -29,10 +43,20 @@
   gap: 20px;
 }
 
-.popular-manufacturers__item {
+.popular-manufacturers__link {
+  width: 220px;
+  height: 145px;
   border: 1px solid $grey;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 145px;
+
+  &:hover {
+    box-shadow: (0 4px 20px rgba(0, 0, 0, 0.15));
+  }
+
+  &:focus {
+    box-shadow: (0 4px 20px rgba(0, 0, 0, 0.15));
+    opacity: 0.5;
+  }
 }

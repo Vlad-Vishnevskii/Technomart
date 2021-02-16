@@ -12,7 +12,7 @@
 }
 
 .services__title-text {
-  font-family: PT Sans;
+  font-family: $alternative-font;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -20,6 +20,113 @@
   width: 394px;
 }
 
-.sevices__wrapper-menu {
+.services__wrapper-menu {
   display: flex;
+}
+
+.services_name-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  position: relative;
+  margin-top: 70px;
+}
+
+.services_name-list::after {
+  content: "";
+  display: block;
+  background-image: url("../img/services-menu-shadow.png");
+  width: 10px;
+  height: 279px;
+  position: absolute;
+  top: -61px;
+  left: 230px;
+}
+
+.services__name {
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: $blue-basic;
+  color: $white;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+
+  &:hover {
+    background-color: $black-menu;
+  }
+}
+
+.services__name_active {
+  background-color: $white;
+  color: $blue-basic;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $white;
+  }
+}
+
+.services-menu {
+  width: 649px;
+  list-style: none;
+}
+
+.services-menu__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: $blue-basic;
+}
+
+.services-menu__description {
+  font-family: $alternative-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $black;
+  width: 300px;
+}
+
+.services-menu__item {
+  padding-bottom: 100px;
+  background-position-x: 127px;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.services-menu__item_delivery {
+  background-image: url("/img/delivery.png");
+}
+
+.services-menu__item_guarantee {
+  background-image: url("/img/guarantee.png");
+}
+
+.services-menu__item_credit {
+  background-image: url("/img/credit.png");
+}
+
+.services-menu__item_active {
+  display: block;
+}
+
+.services-menu__button-credit {
+  text-decoration: none;
+  font-family: $base-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  background-color: $button-red;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  border-radius: 5px;
 }
