@@ -9,6 +9,9 @@
   line-height: 30px;
   color: $black;
   text-transform: uppercase;
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 25px;
 }
 
 .services__title-text {
@@ -17,7 +20,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-  width: 394px;
+  width: 400px;
 }
 
 .services__wrapper-menu {
@@ -30,7 +33,7 @@
   padding: 0;
   width: 240px;
   position: relative;
-  margin-top: 70px;
+  margin-top: 58px;
 }
 
 .services_name-list::after {
@@ -40,7 +43,7 @@
   width: 10px;
   height: 279px;
   position: absolute;
-  top: -61px;
+  top: -40px;
   left: 230px;
 }
 
@@ -52,6 +55,9 @@
   background-color: $blue-basic;
   color: $white;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
 
   &:hover {
     background-color: $black-menu;
@@ -69,8 +75,11 @@
 }
 
 .services-menu {
-  width: 649px;
+  width: 700px;
   list-style: none;
+  padding: 0;
+  padding-left: 79px;
+  padding-top: 9px;
 }
 
 .services-menu__title {
@@ -78,6 +87,7 @@
   font-size: 30px;
   line-height: 30px;
   color: $blue-basic;
+  font-weight: normal;
 }
 
 .services-menu__description {
@@ -87,12 +97,12 @@
   font-size: 13px;
   line-height: 24px;
   color: $black;
-  width: 300px;
+  width: 278px;
 }
 
 .services-menu__item {
   padding-bottom: 100px;
-  background-position-x: 127px;
+  background-position-x: 151px;
   background-position-y: 20px;
   background-repeat: no-repeat;
   display: none;
