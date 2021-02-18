@@ -1,6 +1,6 @@
 .footer-top {
   background-color: $blue-basic;
-  padding-bottom: 50px;
+  padding-bottom: 53px;
 }
 
 .footer-top_wrapper {
@@ -10,6 +10,7 @@
 
 .footer-top__contacts {
   width: 325px;
+  margin-top: 18px;
 }
 
 .footer-top__link {
@@ -27,7 +28,6 @@
 
 .footer-bottom__wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .footer-bottom__copyright {
@@ -36,6 +36,18 @@
   line-height: 18px;
   color: $white;
   width: 230px;
+  margin-right: 158px;
+  padding-top: 8px;
+}
+
+.footer-bottom__feedback {
+  margin-left: 119px;
+  padding-top: 6px;
+}
+
+.footer-bottom__developer {
+  margin-left: 51px;
+  padding-top: 6px;
 }
 
 .footer-bottom__feedback,

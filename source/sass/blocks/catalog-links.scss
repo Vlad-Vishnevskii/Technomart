@@ -1,12 +1,11 @@
 .catalog-links {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0;
-}
-
-.catalog-links__item {
-  margin-right: 58px;
+  width: 100%;
+  padding-top: 17px;
+  padding-left: 23px;
 }
 
 .catalog-links__item:last-of-type {
